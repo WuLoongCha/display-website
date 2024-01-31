@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myspace</title>
+  </head>
+  <style>
+    body {
+      background-color: beige;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .upper {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+    .down {
+      background-color: bisque;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .title {
+      height: 60px;
+      background-color: rgb(188, 70, 27);
+      padding: 5px;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    }
+    .titlepic {
+      width: 50px;
+      border-radius: 25px;
+    }
+    .mainbody {
+      display: flex;
+      flex: 1;
+    }
+    .sidebar {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+    }
+    .links {
+      position: sticky;
+      top: 83px;
+      margin-left: 8px;
+    }
+    .link {
+      height: 50px;
+      background-color: white;
+      border-bottom: 1px solid grey;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    }
+    .leftpart {
+      flex: 3;
+    }
+    .rightpart {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .datapart {
+      margin: 8px;
+      display: flex;
+    }
+    .data {
+      height: 100px;
+      background-color: white;
+      flex: 1;
+      margin-right: 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    }
+    .dataend {
+      height: 100px;
+      background-color: white;
+      flex: 1;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    }
+    .messagepart {
+      display: flex;
+      flex-direction: column;
+    }
+    .message {
+      height: 200px;
+      background-color: white;
+      margin: 0 8px 8px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+    }
+    .info {
+      height: 300px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+      margin: 8px 8px 0 0;
+    }
+    @media (max-width: 600px) {
+      .sidebar {
+        display: none;
+      }
+      .mainbody {
+        flex-direction: column;
+      }
+      .info {
+        margin-left: 8px;
+      }
+      .datapart {
+        flex-direction: column;
+        margin-bottom: 16px;
+      }
+      .data {
+        flex: auto;
+        margin: 0 0 8px;
+      }
+      .dataend {
+        flex: auto;
+      }
+    }
+  </style>
+  <body>
+    <div class="upper">
+      <div class="title">
+        <img src="/pic/bear.jpg" alt="pic" class="titlepic" />
+      </div>
+      <div class="mainbody">
+        <div class="sidebar">
+          <div class="links">
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>
+          </div>
+        </div>
+        <div class="leftpart">
+          <div class="datapart">
+            <div class="data">1</div>
+            <div class="data">2</div>
+            <div class="dataend">3</div>
+          </div>
+          <div class="messagepart">
+            <div class="message">333</div>
+            <div class="message"></div>
+            <div class="message"></div>
+          </div>
+        </div>
+        <div class="rightpart">
+          <div class="info"></div>
+          <div class="info"></div>
+        </div>
+      </div>
+    </div>
+    <div class="down">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, assumenda
+      iusto. Facilis a temporibus tenetur vero nemo, debitis praesentium soluta
+      dicta, dolorem non quia ea fugit vel tempore eum recusandae. @copyright
+    </div>
+  </body>
+</html>
